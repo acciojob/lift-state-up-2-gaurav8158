@@ -10,6 +10,7 @@ const App = () => {
      <div className="child">
       <h1>Child Component</h1>
       <input 
+      type="text"
       value={data}
       onChange={(e)=>setData(e.target.value)}
       />
