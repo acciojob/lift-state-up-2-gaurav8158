@@ -1,1 +1,12 @@
-
+.child{
+    background-color: #eaaa08;
+    padding:10px;
+}
+.parent{
+    background-color: #66c61c;
+    height:50%;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    overflow-x:auto;
+}

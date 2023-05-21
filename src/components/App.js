@@ -1,11 +1,19 @@
-
-import React from "react";
+import React, { useState } from "react";
 import './../styles/App.css';
 
 const App = () => {
+  const[data,setData]=useState("");
   return (
-    <div>
-        {/* Do not remove the main div */}
+    <div className="parent">
+      <h1>Parent Component</h1>
+      <p>{data}</p>
+     <div className="child">
+      <h1>Child Component</h1>
+      <input 
+      value={data}
+      onChange={(e)=>setData(e.target.value)}
+      />
+     </div>
     </div>
   )
 }
